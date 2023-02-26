@@ -27,7 +27,7 @@
         background-color: lightblue;
       }
       tr:nth-child(even) {
-            background-color: lavenderblush;
+            background-color: #ADDEA6;
       }
       img{
         width:23%;
@@ -80,6 +80,12 @@
       body{
         background-image: url("https://static.vecteezy.com/system/resources/previews/004/930/847/original/baby-seamless-pattern-flower-background-randomly-placed-on-a-pink-background-hand-drawn-design-in-cartoon-style-used-for-fabrics-textiles-illustration-free-vector.jpg");
       }
+      tr:not(:first-child):hover{
+        background-color: lightcyan;
+      }
+      th, tr{
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -90,7 +96,7 @@
     </nav>
     <h1>My Schedule</h1>
     <img id="default" src="gophers-mascot.png" alt="gophers-mascot.png" class="floatright" style="width: 400; height: 300;">
-    <table cellspacing="0" >
+    <table  >
       <tr>
         <th>Day</th>
         <th>Event</th>
@@ -118,7 +124,7 @@
             <div><img src = "Tate.png" class="test"></div></td>
         <td>N/A</td>
         <td>
-          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=002189">CSCI4011 Info</a>
+          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=002189" >CSCI4011 Info</a>
         </td>
       </tr>
       <tr onmouseover="changebruininks()">

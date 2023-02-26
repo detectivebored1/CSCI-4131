@@ -78,14 +78,14 @@
       <a href="aboutme.html" target="_self" style="text-align:left;"> About Me </a>
     </nav>
     <table class = "center">
-      <form action="https://www-users.cselabs.umn.edu/~cuixx327/a2.php" method="get">
+      <form action="https://www-users.cselabs.umn.edu/~cuixx327/a2.php" method="post">
           <tr>
               <td>
                   <label for="event">
                       Event
                   </label>
               </td>
-              <td><input type="text" id="event" pattern="^[a-zA-Z0-9 ]*$"/>
+              <td><input type="text" id="event" name ="event" pattern="^[a-zA-Z0-9 ]*$"/>
               </td>
           </tr>
           <tr>
@@ -94,13 +94,13 @@
                   </label>
               </td>
               <td><select id="day" name="day">
-                <option value="sunday">Sunday</option>
-                <option value="monday">Monday</option>
-                <option value="tuesday">Tuesday</option>
-                <option value="wednesday">Wednesday</option>
-                <option value="thursday">Thursday</option>
-                <option value="friday">Friday</option>
-                <option value="saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
               </select>
               </td>
           </tr>
@@ -128,16 +128,25 @@
                     Phone
                 </label>
             </td>
-            <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+            <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
             </td>
         </tr>
+        <tr>
+          <td>
+              <label for="location">
+                  Location
+              </label>
+          </td>
+          <td><input type="text" id="location" name="location" required>
+          </td>
+      </tr>
         <tr>
           <td>
               <label for="extra">
                   Extra Info
               </label>
           </td>
-          <td><input type="text" id="extra"/>
+          <td><input type="text" id="extra" name ="extra" required>
           </td>
       </tr>
       <tr>
@@ -146,7 +155,7 @@
                 URL
             </label>
         </td>
-        <td><input type="url" id="url"/>
+        <td><input type="url" id="url" name="url"required>
         </td>
     </tr>
     <tr>
