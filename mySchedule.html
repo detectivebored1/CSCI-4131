@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title> Johnny's Schedule </title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      table, th, td {
+        border: 1px solid lightskyblue;
+        border-collapse: collapse;
+      }
+      th{
+        text-align: left;
+        padding: 10px;
+
+      }
+      td{
+        padding: 10px;
+      }
+      table{
+        width: 75%;
+      }
+      /*th {
+        width: 100%;
+      }*/
+      tr{
+        border-bottom: 1rem lightskyblue;
+        background-color: lightblue;
+      }
+      tr:nth-child(even) {
+            background-color: lavenderblush;
+      }
+      img{
+        width:23%;
+        padding: 2px;
+        float: right;
+        padding-top: 5%;
+
+      }
+      nav{
+        background-color: lavenderblush;
+        border: 1px solid lightskyblue;
+        width: 98%;
+        padding: 20px;
+        
+      }
+      a:link{
+        text-decoration: none;
+      } 
+      a{
+        padding: 10px;
+      }
+      .hide {
+        display: none;
+      }
+          
+      .myDIV:hover + .hide {
+        display: block;
+      }
+      .tate{
+        background: lavenderblush;
+      }
+      .tate:hover{
+
+        background: "Tate.png";
+      }
+      .test{
+        float: left; 
+        display: none;
+        width: 100px;
+        height: 80px;
+      }
+      tr:hover .test{
+        float: left; 
+        display: block;
+      }
+      h1, p, li{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:darkblue;
+      }
+      body{
+        background-image: url("https://static.vecteezy.com/system/resources/previews/004/930/847/original/baby-seamless-pattern-flower-background-randomly-placed-on-a-pink-background-hand-drawn-design-in-cartoon-style-used-for-fabrics-textiles-illustration-free-vector.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="mySchedule.html" target="_self" style="text-align:left;"> My Schedule </a>
+      <a href="myForm.html" target="_self" style="text-align:left;"> Form Input </a>
+      <a href="aboutme.html" target="_self" style="text-align:left;"> About Me </a>
+    </nav>
+    <h1>My Schedule</h1>
+    <img id="default" src="gophers-mascot.png" alt="gophers-mascot.png" class="floatright" style="width: 400; height: 300;">
+    <table cellspacing="0" >
+      <tr>
+        <th>Day</th>
+        <th>Event</th>
+        <th>Time</th>
+        <th>Location</th>
+        <th>Phone Number</th>
+        <th>URL</th>
+      </tr>
+      <tr onmouseover="changetate()">
+        <td>Monday</td>
+        <td>CSCI4131 - Internet Programming Lecture</td>
+        <td>11:15AM - 12:30PM</td>
+        <td>Tate Hall - Room 105
+            <div><img src = "Tate.png" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=790654">CSCI4131 Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changetate()">
+        <td>Monday</td>
+        <td>CSCI4011 - Automata Theory Lecture</td>
+        <td>1:00PM - 2:15PM</td>
+        <td>Tate Hall - Room 105
+            <div><img src = "Tate.png" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=002189">CSCI4011 Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changebruininks()">
+        <td>Monday</td>
+        <td>CSCI5302 - Analysis Numerical Algorithms Lecture</td>
+        <td>4:00PM - 5:15PM</td>
+        <td>Bruininks Hall - Room 432
+            <div><img src = "bruininks.jpg" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=002163">CSCI5302 Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changetate()">
+        <td>Tuesday</td>
+        <td>EE4951W - Senior Design</td>
+        <td>2:30PM - 3:45PM</td>
+        <td>Tate Hall - Room 101
+          <div><img src = "Tate.png" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=004807">EE4951W Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changetate()">
+        <td>Wednesday</td>
+        <td>CSCI4131 - Internet Programming Lecture</td>
+        <td>11:15AM - 12:30PM</td>
+        <td>Tate Hall - Room 105
+          <div><img src = "Tate.png" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=790654">CSCI4131 Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changetate()">
+        <td>Wednesday</td>
+        <td>CSCI4011 - Automata Theory Lecture</td>
+        <td>1:00PM - 2:15PM</td>
+        <td>Tate Hall - Room 105
+          <div><img src = "Tate.png" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=002189">CSCI4011 Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changebruininks()">
+        <td>Wednesday</td>
+        <td>CSCI5302 - Analysis Numerical Algorithms Lecture</td>
+        <td>4:00PM - 5:15PM</td>
+        <td>Bruininks Hall - Room 432
+          <div><img src = "bruininks.jpg" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=002163">CSCI5302 Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changetate()">
+        <td>Thursday</td>
+        <td>EE4951W - Senior Design</td>
+        <td>2:30PM - 3:45PM</td>
+        <td>Tate Hall - Room 101
+          <div><img src = "Tate.png" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=004807">EE4951W Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changecoffman()">
+        <td>Thursday</td>
+        <td>Commuter Connection Officer Meeting</td>
+        <td>4:30PM - 5:30PM</td>
+        <td>Memorial Union - Room 301
+          <div><img src = "coffman.jpg" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://twin-cities-umn.presence.io/organization/university-of-minnesota-commuter-connection-492">Commuter Connection Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changezoom()">
+        <td>Friday</td>
+        <td>Off-Campus Living Meeting</td>
+        <td>10:00AM - 11:00AM</td>
+        <td>Virtual
+          <div><img src = "zoom.jpg" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="http://ocl.umn.edu/">Off-Campus Living Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changeamundson()">
+        <td>Friday</td>
+        <td>CSCI4011 - Automata Theory Discussion</td>
+        <td>12:20PM - 1:30PM</td>
+        <td>Amundson Hall - Room 240
+          <div><img src = "amundson.jpg" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=002189">CSCI4011 Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changeregis()">
+        <td>Saturday</td>
+        <td>Studio Sketch Time</td>
+        <td>12:00PM - 3:00PM</td>
+        <td>Regis Art Center - Live Studio Room
+          <div><img src = "regis.jpg" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://cla.umn.edu/art">Studio Art Info</a>
+        </td>
+      </tr>
+      <tr onmouseover="changecooke()">
+        <td>Sunday</td>
+        <td>Ping Pong Club</td>
+        <td>2:00PM - 4:00PM</td>
+        <td>Cooke Hall - Room 308
+          <div><img src = "cooke.jpg" class="test"></div></td>
+        <td>N/A</td>
+        <td>
+          <a href="https://umnttc.com/">Ping Pong Club Info</a>
+        </td>
+      </tr>
+    </table>
+    <script>
+      function changetate(){
+        document.getElementById("default").src = "tate.png";
+      }
+      function changeregis(){
+        document.getElementById("default").src = "regis.jpg";
+      }
+      function changezoom(){
+        document.getElementById("default").src = "zoom.jpg";
+      }
+      function changecoffman(){
+        document.getElementById("default").src = "coffman.jpg";
+      }
+      function changecooke(){
+        document.getElementById("default").src = "cooke.jpg";
+      }
+      function changeamundson(){
+        document.getElementById("default").src = "amundson.jpg";
+      }
+      function changebruininks(){
+        document.getElementById("default").src = "bruininks.jpg";
+      }
+      function changedefault(){
+        document.getElementById("default").src = "gophers-mascot.png";
+      }
+      
+    </script>
+  </body>
+</html>
